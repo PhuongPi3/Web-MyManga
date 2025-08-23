@@ -1,0 +1,139 @@
+/* Manga List Grid - Mangadex Plugin */
+.manga-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.manga-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.manga-card:hover {
+  transform: translateY(-4px);
+}
+
+.manga-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 140%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.manga-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.manga-title {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.manga-chapters {
+  background: #111;
+  padding: 8px;
+  color: #ccc;
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+.chapter-item {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 2px 0;
+}
+
+.chapter-item:first-child {
+  border-top: none;
+}
+
+.chapter-item a {
+  color: #ccc;
+  text-decoration: none;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 8px;
+}
+
+.chapter-item a:hover {
+  text-decoration: underline;
+}
+
+.chapter-time {
+  opacity: 0.8;
+  font-size: 7px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.pagination a,
+.pagination strong {
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.pagination a:hover {
+  background: #444;
+}
+
+.pagination strong {
+  background: #ff9800;
+  color: #000;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .manga-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .manga-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 901px) {
+  .manga-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
