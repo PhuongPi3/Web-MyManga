@@ -1,6 +1,8 @@
 # 📚 MangaDex API WordPress Plugin
 
-A custom WordPress plugin to fetch and manage manga data from the [MangaDex API](https://api.mangadex.org/), store it in the WP database, and display manga readers, comments, and rankings via shortcodes.
+A WordPress plugin integrating [MangaDex API](https://api.mangadex.org/) to crawl, sync, and display manga content directly inside WordPress.  
+Features include **reader with comments, user engagement tools (bookmarks, ratings, history), and membership integration** for manga community sites.  
+🚧 Project status: Beta — actively maintained with demo at [mymanga.fwh.is](https://mymanga.fwh.is/).
 
 ---
 
@@ -111,7 +113,7 @@ After activating the plugin in WordPress, you can add manga content and features
 ### 4. Demo
 
 * A live demo of this plugin is available at: **[mymanga.fwh.is](https://mymanga.fwh.is/)**
-  *(Note: some features may be incomplete or experimental.)*
+  *(Note: Demo is experimental, some features may be incomplete.)*
 
 
 ---
