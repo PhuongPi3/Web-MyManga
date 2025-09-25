@@ -73,46 +73,46 @@ The plugin automatically creates custom tables:
 
 ---
 
-📖 Suggested “Usage Guide” Section for README
-🔧 Usage Guide
+# 📖 Suggested “Usage Guide” Section for README
 
-After activating the plugin in WordPress, you can add manga content and features to your site using shortcodes.
+## 🔧 Usage Guide
 
-1. Add Shortcodes to Pages
+After activating the plugin in WordPress, you can add manga content and features to your site using **shortcodes**.
 
-Go to WordPress Admin → Pages → Add New (or edit an existing page).
+### 1. Add Shortcodes to Pages
 
-Insert one of the following shortcodes into the page content:
+* Go to **WordPress Admin → Pages → Add New** (or edit an existing page).
+* Insert one of the following shortcodes into the page content:
 
-Shortcode	Description
-[mangadex_home]	Homepage manga list
-[mangadex_featured]	Featured manga list
-[mangadex_latest]	Latest manga releases
-[manga_top_chart]	Manga ranking chart
-[manga_search_filter]	Search + filter UI
-[mangadex_reader]	Manga reader (auto when clicking chapter link)
-[mangadex_detail]	Manga detail page (auto when clicking manga link)
-[manga_read_history]	User’s reading history
-[manga_read_history_mini]	Compact reading history widget
-[vip_membership_promo]	VIP upgrade promo box (links to Paid Member Subscriptions plugin)
+| Shortcode                   | Description                                                       |
+| --------------------------- | ----------------------------------------------------------------- |
+| `[mangadex_home]`           | Homepage manga list                                               |
+| `[mangadex_featured]`       | Featured manga list                                               |
+| `[mangadex_latest]`         | Latest manga releases                                             |
+| `[manga_top_chart]`         | Manga ranking chart                                               |
+| `[manga_search_filter]`     | Search + filter UI                                                |
+| `[mangadex_reader]`         | Manga reader (auto when clicking chapter link)                    |
+| `[mangadex_detail]`         | Manga detail page (auto when clicking manga link)                 |
+| `[manga_read_history]`      | User’s reading history                                            |
+| `[manga_read_history_mini]` | Compact reading history widget                                    |
+| `[vip_membership_promo]`    | VIP upgrade promo box (links to Paid Member Subscriptions plugin) |
 
-👉 Example: Create a page “Featured Manga” and paste [mangadex_featured].
+👉 Example: Create a page “Featured Manga” and paste `[mangadex_featured]`.
 
-2. Customize Theme Integration
+### 2. Customize Theme Integration
 
-For homepage: go to Appearance → Customize and add the shortcode [mangadex_home] or [mangadex_featured] into a widget/HTML block.
+* For homepage: go to **Appearance → Customize** and add the shortcode `[mangadex_home]` or `[mangadex_featured]` into a widget/HTML block.
+* For membership promo: insert `[vip_membership_promo]` inside a page or post to display upgrade banner.
 
-For membership promo: insert [vip_membership_promo] inside a page or post to display upgrade banner.
+### 3. Settings
 
-3. Settings
+* The plugin currently has **no dedicated settings page**. All customization is done through **shortcodes** and WordPress built-in editor.
 
-The plugin currently has no dedicated settings page. All customization is done through shortcodes and WordPress built-in editor.
+### 4. Demo
 
-4. Demo
+* A live demo of this plugin is available at: **[mymanga.fwh.is](https://mymanga.fwh.is/)**
+  *(Note: some features may be incomplete or experimental.)*
 
-A live demo of this plugin is available at: mymanga.fwh.is
-
-(Note: some features may be incomplete or experimental.)
 
 ---
 
